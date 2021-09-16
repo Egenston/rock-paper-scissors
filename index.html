@@ -9,12 +9,35 @@
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <div class="wrapper">
+    <div class="wrapper" id="blur">
         <header>
-            <h1 id="heading-rock">ROCK</h1>
-            <h1 id="heading-paper">PAPER</h1>
-            <h1 id="heading-scissors">SCISSORS</h1>
+            <h1>ROCK PAPER SCISSORS</h1>
         </header>
+        <div class="score-div">
+            <div id="score-cards">
+                <div class="score-card">
+                    <p>PLAYER: <strong id="player-score">0</strong></p>
+                    <i id="player-choice"></i>
+                </div>
+                <div class="score-card">
+                    <p>COMPUTER: <strong id="computer-score">0</strong></p>
+                    <i id="computer-choice"></i>
+                </div>
+            </div>
+            <p id="round-result"></p>
+        </div>
+        <div class="choice-div">
+            <i class="far fa-hand-rock" id="rock-button"></i>
+            <i class="far fa-hand-paper" id="paper-button"></i>
+            <i class="far fa-hand-scissors" id="scissors-button"></i>
+        </div>
+        <footer>
+            <p>Copyright  <span>&copy</span>  Egenston <a href="https://github.com/Egenston" target="_blank"><i class="fab fa-github"></i></a></p>
+        </footer>
+    </div>
+    <div id="popup">
+        <h1 id="game-result"></h1>
+        <a href="#" onclick="blurAndPopup()" id="restart-button">RESTART</a>
     </div>
     <script src="script.js"></script>
 </body>
