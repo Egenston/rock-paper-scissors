@@ -233,6 +233,7 @@ footer i:hover{
         font-size: 20px;
     }
     header{
+        padding: 40px 0px;
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
@@ -247,12 +248,13 @@ footer i:hover{
         line-height: initial;
     }
     .score-div{
-        width: 85vw;
+        width: 95vw;
         height: 250px;
     }
     #score-cards{
-        gap: 0;
-        justify-content: space-evenly;
+        gap: 50px;
+        justify-content: center;
+
     }
     .score-card p, .score-card strong{
         font-size: 35px;
@@ -268,35 +270,44 @@ footer i:hover{
         gap: 40px;
     }
     .choice-div i{
-        font-size: 90px;
+        font-size: 100px;
     }
 }
 @media (max-width: 500px){
     header h1{
         padding: 0 5px;
-        font-size: 25px;
+        font-size: 30px;
     }
     .score-div{
         height: 200px;
     }
     .score-card p, .score-card strong{
-        font-size: 25px;
+        font-size: 27px;
     }
     .score-card i{
         font-size: 65px;
+    }
+    .choice-div{
+        gap: 30px;
+    }
+    .choice-div i{
+        font-size: 80px;
+    }
+}
+@media (max-width: 350px){
+    header h1{
+        font-size: 28px;
+    }
+    .score-card p, .score-card strong{
+        font-size: 22px;
+    }
+    #round-result{
+        font-size: 50px;
     }
     .choice-div{
         gap: 20px;
     }
     .choice-div i{
         font-size: 70px;
-    }
-}
-@media (max-width: 300px){
-    .score-card p, .score-card strong{
-        font-size: 18px;
-    }
-    #round-result{
-        font-size: 50px;
     }
 }
